@@ -1,0 +1,34 @@
+Assignment idea
+
+Class: Survey, Candidate, Question
+- Candidate class:
+-- first Name
+-- Last Name
+-- Phone Number
+-- Email address
+
+- Question class:
+-- Question
+-- Answers:
+--- Agree
+--- Slightly Agree
+--- Slightly Disagree
+--- Disagree
+--- prefer not to answer
+
+- Survey Class:
+-- Survey Name
+-- Survey Description
+-- Questions
+
+
+Helper Class:
+- find the most given answer on a survey
+- print a survey's result, the number of each answer/question
+- find the answers given by a candidate on a survey
+- add/remove questions to an existing survey
+- checks if the question is answered by less than 50% of the candidates, and if not it will be removed
+- validates survey
+-- must have at least 10 questions
+-- can have at most 40 questions
+-- each question has to be unique
