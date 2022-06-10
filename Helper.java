@@ -68,4 +68,22 @@ public class Helper {
         System.out.println("5) Don't want to answer");
     }
 
+
+    protected static ArrayList<Integer> takeSurvey(Survey arg){
+        ArrayList<Integer> results = null;
+        for(Question questionShown : arg.getQuestionArrayList()){
+             results = new ArrayList<Integer>();
+            System.out.println(questionShown.getQuestion());
+            Helper.printAnswers();
+            System.out.println("Your answer is (from 1 to 5): ");
+           results.add(objSk.nextInt());
+        }
+
+        return results;
+
+    }
+
+
+
+
 }

@@ -1,11 +1,16 @@
 package javaAssignment1;
 
+import java.util.ArrayList;
 import java.util.Scanner;
 
 public class mainFrame {
 
 
     public static void main(String[] args){
+
+        ArrayList<Candidate> listOfCandidate = new ArrayList<Candidate>();
+        ArrayList<Survey> listOfSurverys = new ArrayList<Survey>();
+
     int response = 0;
         Scanner objSk = new Scanner(System.in);
     do{
@@ -25,14 +30,13 @@ public class mainFrame {
                 String lastName = objSk.next();
                 String email = objSk.next();
                 String phoneNumber = objSk.next();
-
-                Candidate candidateObj = new Candidate(firstName, lastName, phoneNumber, email);
-
+               listOfCandidate.add(new Candidate(firstName, lastName, phoneNumber, email));
                 break;
             }
 
             case 2 : {
-                Survey survey = new Survey();
+            listOfSurverys.add(new Survey());
+            break;
             }
         }
 
